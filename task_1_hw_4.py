@@ -12,16 +12,16 @@ def total_salary(path: str) -> tuple:
                     count += 1
             except ValueError:
                     print(f"Error in line: {i.strip()} .")
-                    return 0,0
+                    return []
             if count == 0:
                 print("Empty file")
-                return 0,0
+                return []
             average_salary = round(total / count, 2)
             return total, average_salary
         
     except FileNotFoundError:
         print("File not found")
-        return 0,0
+        return []
             
 
 cont = total_salary(r"C:\Users\Maksym\Desktop\my_projects\homework\goit_algo_hw_04\price.txt")

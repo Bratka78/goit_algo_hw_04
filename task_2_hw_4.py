@@ -14,7 +14,7 @@ def get_cats_info(path):
                 cats.append({
                     "id": id,
                     "name": name,
-                    "age": age
+                    "age": int(age)
                 })
               
         return cats
